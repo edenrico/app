@@ -8,7 +8,7 @@ export default function LoginScreen() {
 
   return (
     <LoginForm
-      onSubmit={() => router.replace('/(tabs)')}
+      onSubmit={(email, password) => router.replace('/(tabs)')}
       onSignUp={() => router.push('/signup')}
     />
   );

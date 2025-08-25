@@ -8,7 +8,7 @@ export default function SignupScreen() {
 
   return (
     <SignupForm
-      onSubmit={() => router.replace('/(tabs)')}
+      onSubmit={(email, password) => router.replace('/(tabs)')}
       onLogin={() => router.back()}
     />
   );
